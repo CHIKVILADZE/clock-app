@@ -1,26 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components';
 import './App.css';
+import Day from './components/day';
+import {  useState } from 'react';
+import Footer from './components/section'
+
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  let today = new Date();
+
+    let hours = addZero (today.getHours());
+    let min = addZero (today.getMinutes())
+
+    let  time :number | string = `${hours} : ${min}`
+    function addZero (num : number){
+      return num<10 ? `0${num}` :num
+    }
+
+
+  const [section, setSection] = useState(null)
+  const [location, setLocation] = useState(null)
+  const[more, setMore]=useState(false)
+  const [night, setNight] = useState(false)
+
+  const handleClick = () =>{
+    setMore(!more)
+  }
+  
+
+ 
+     return (
+    <div className="app">
+      <Day section={section} setSection={setSection} 
+      location={location} setLocation={setLocation}
+      more={more} setMore={setMore}
+      handleClick={handleClick} night={night} setNight={setNight} />
+      
     </div>
   );
 }
 
 export default App;
+   
+
+
+ 
+
+
+
+
