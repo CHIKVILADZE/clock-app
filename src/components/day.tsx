@@ -136,6 +136,7 @@ const  DayTime   = styled.div<any>`
     image-rendering: auto;
     background-size: 100% 800px;
     overflow-x:hidden;
+    overflow-y:hidden;
    }
     `
 
