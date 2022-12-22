@@ -1,5 +1,5 @@
 {
-  "homepahe":"http://chikviladze.github.io/clock-app",
+  "homepahe": "http://chikviladze.github.io/clock-app",
   "name": "click-app",
   "version": "0.1.0",
   "private": true,
@@ -24,8 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy":"gh-pages -d build",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
