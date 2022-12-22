@@ -294,9 +294,14 @@ line-height: 48px;
 
 
 @media (min-width:1000px){
+
   .app{
     width:100vw;
+    height:100vh;
+    
+    max-width: 1500px;
   }
+
   h3{
     top:153px;
     left:130px;
