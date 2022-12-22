@@ -129,12 +129,23 @@ const  DayTime   = styled.div<any>`
    }
    
    @media screen and (min-width:1000px){
-    width:100vw;
+    width:100%;
     height:800px;
     background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
     background-repeat:no-repeat;
     image-rendering: auto;
     background-size: 100% 800px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+   }
+
+   @media screen and (min-width:1400px){
+    width:100%;
+    height:900px;
+    background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
+    background-repeat:no-repeat;
+    image-rendering: auto;
+    background-size: 100% 900px;
     overflow-x:hidden;
     overflow-y:hidden;
    }
