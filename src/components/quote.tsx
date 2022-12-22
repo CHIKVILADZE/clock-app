@@ -83,9 +83,18 @@ color:#FFFF;
        left:130px;
       
       top:56px;
+ }  
    
+ @media screen and (min-width:1400px){
+      
+      width:20%;
+     
+       left:200px;
+      
+      top:56px;
+ }  
    
-}
+
 `
 
 

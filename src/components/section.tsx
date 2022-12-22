@@ -94,7 +94,7 @@ align-items: center;
 @media screen and (min-width:768px){
     width:768px;
     height:400px;
-    margin-top:64px;
+    margin-top:80px;
     
     display:flex;
     flex-direction: row;
@@ -104,7 +104,7 @@ align-items: center;
 }
 @media screen and (min-width:1000px){
     width:100vw;
-    height:400px;
+    height:325px;
     margin-top:64px;
     
     display:flex;

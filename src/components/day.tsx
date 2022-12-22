@@ -129,11 +129,13 @@ const  DayTime   = styled.div<any>`
    }
    
    @media screen and (min-width:1000px){
-    width:100%;
+    width:100vw;
     height:800px;
     background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
     background-repeat:no-repeat;
+    image-rendering: auto;
     background-size: 100% 800px;
+    overflow-x:hidden;
    }
     `
 
@@ -154,15 +156,22 @@ flex-direction: column;
 }
 
 @media screen and (min-width:1000px){
-   margin-top:458px;
+   margin-top:375px;
    margin-left:130px;
    width:100%;
+}
+
+@media screen and (min-width:1400px){
+ 
+   margin-left:200px;
+   
 }
 `
 const TimeZoneStyle2 = styled.div`
 display:flex;
-margin-top:99px;
+margin-top:0;
 margin-left:26px;
+
 
 
 flex-direction: column;
@@ -176,6 +185,11 @@ flex-direction: column;
 @media screen and (min-width:1000px){
    margin-top:115px;
    margin-left:164px;
+}
+@media screen and (min-width:1000px){
+   
+   margin-left:200px;
+
 }
 `
 

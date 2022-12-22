@@ -347,7 +347,7 @@ line-height: 48px;
     }
     .btnbox2{
       position:absolute;
-      top:295px;
+      top:250px;
       left:850px;
      
     
@@ -387,4 +387,32 @@ line-height: 48px;
     width:600px;
     
   }
+   .refresh{
+    
+    left:1100px;
+    top:66px;
+  } 
+  .btnbox{
+    position:absolute;
+    top:615px;
+    left:1100px;
+   
+  
+    }
+    .btnbox2{
+      position:absolute;
+      top:250px;
+      left:1100px;
+     
+    
+      }
+
+      h3{
+        left:200px;
+      }
+
+      .sectionbox{
+        width:700px;
+        
+      }
 }
