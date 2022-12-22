@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clock-app/static/css/main.5067787b.css",
-    "main.js": "/clock-app/static/js/main.b0ffa925.js",
+    "main.css": "/clock-app/static/css/main.c2708eec.css",
+    "main.js": "/clock-app/static/js/main.96310c16.js",
     "static/media/night.jpg": "/clock-app/static/media/night.a9c730ff6f3e4a40519b.jpg",
     "static/media/day.jpg": "/clock-app/static/media/day.13c049fcfdc590ddcef0.jpg",
     "static/media/sun.svg": "/clock-app/static/media/sun.cb7a2aac3be7bf88b4cf17bd97d62fd2.svg",
@@ -10,11 +10,11 @@
     "static/media/moon.svg": "/clock-app/static/media/moon.83b9f0dbe53bfaab2e1c6dc344545e9c.svg",
     "static/media/up.svg": "/clock-app/static/media/up.9f27dbc98aef9217ffedf9388f4088d5.svg",
     "static/media/down.svg": "/clock-app/static/media/down.4d330a30a2190ce71512b306095fbf41.svg",
-    "main.5067787b.css.map": "/clock-app/static/css/main.5067787b.css.map",
-    "main.b0ffa925.js.map": "/clock-app/static/js/main.b0ffa925.js.map"
+    "main.c2708eec.css.map": "/clock-app/static/css/main.c2708eec.css.map",
+    "main.96310c16.js.map": "/clock-app/static/js/main.96310c16.js.map"
   },
   "entrypoints": [
-    "static/css/main.5067787b.css",
-    "static/js/main.b0ffa925.js"
+    "static/css/main.c2708eec.css",
+    "static/js/main.96310c16.js"
   ]
 }
