@@ -15,7 +15,7 @@ function Footer ({location , setLocation, hours}){
     useEffect(()=>{
         let requestLocation  = async () =>{
 
-            let response = await axios.get('http://worldtimeapi.org/api/timezone/Asia/Tbilisi')
+            let response = await axios.get('http://worldtimeapi.org/api/timezone/Asia/Tbilisi/')
                let timezone =   response.data.timezone
                let dayYear = response.data.day_of_year
                let dayWeek = response.data.day_of_week
@@ -76,8 +76,8 @@ export default Footer;
 
 const SectionStyle = styled.div<any>`
 width:375px;
-height:224px;
-padding-top:32px;
+height:250px;
+padding-top:20px;
 margin-top:40px;
 background-color: rgba(${props => props.dark > 18 || props.dark < 6 ? '255,255,255,0.75' : '0,0,0,0.75'});
 backdrop-filter: blur(20.3871px);
@@ -93,8 +93,8 @@ align-items: center;
 
 @media screen and (min-width:768px){
     width:768px;
-    height:400px;
-    margin-top:80px;
+    height:410px;
+    margin-top:70px;
     
     display:flex;
     flex-direction: row;
@@ -104,9 +104,20 @@ align-items: center;
 }
 @media screen and (min-width:1000px){
     width:100vw;
-    height:325px;
+    height:350px;
     margin-top:64px;
     
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+@media screen and (min-width:1400px){
+    width:100vw;
+    height:500px;
+    margin-top:64px;
+   
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;

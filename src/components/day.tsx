@@ -33,7 +33,7 @@ return(
         <div className="main">
           <Quote/>
           <TimeZoneStyle>
-          {hours > 12 || hours < 6 ? 
+          {hours > 12 && hours < 6 ? 
            <div className='sunmoon'>
                 <img className="sun" src={sun} alt='sun'/>
                 <p>GOOD MORNING</p>
@@ -66,7 +66,7 @@ return(
                 {hours > 12 || hours < 6 ? 
            <div className='sunmoon'>
                 <img className="sun" src={sun} alt='sun'/>
-                <p>GOOD MORNING</p>
+                <p className="para2">GOOD MORNING</p>
             </div> 
             : 
             <div className='sunmoon'>
@@ -114,7 +114,7 @@ const  DayTime   = styled.div<any>`
     border:1px solid black;
     top:0;
     left:0;
-    background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
+    background-image: url(${props => props.hours > 12 || props.hours < 6 ? night : day});
     background-repeat:no-repeat;
     background-size: 100% 100%;
 
@@ -122,7 +122,7 @@ const  DayTime   = styled.div<any>`
    @media screen and (min-width:768px){
     width:100%;
     height:1024px;
-    background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
+    background-image: url(${props => props.hours > 12 || props.hours < 6 ? night : day});
     background-repeat:no-repeat;
     background-size: 768px 1024px;
     
@@ -131,7 +131,7 @@ const  DayTime   = styled.div<any>`
    @media screen and (min-width:1000px){
     width:100%;
     height:800px;
-    background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
+    background-image: url(${props => props.hours > 12 || props.hours < 6 ? night : day});
     background-repeat:no-repeat;
     image-rendering: auto;
     background-size: 100% 800px;
@@ -142,7 +142,7 @@ const  DayTime   = styled.div<any>`
    @media screen and (min-width:1400px){
     width:100%;
     height:900px;
-    background-image: url(${props => props.hours > 12 && props.hours < 6 ? night : day});
+    background-image: url(${props => props.hours > 12 || props.hours < 6 ? night : day});
     background-repeat:no-repeat;
     image-rendering: auto;
     background-size: 100% 900px;
@@ -155,7 +155,7 @@ const  DayTime   = styled.div<any>`
 
 const TimeZoneStyle = styled.div`
 display:flex;
-margin-top:355px;
+margin-top:330px;
 margin-left:26px;
 
 
@@ -181,8 +181,9 @@ flex-direction: column;
 `
 const TimeZoneStyle2 = styled.div`
 display:flex;
-margin-top:0;
+margin-top:99px;
 margin-left:26px;
+
 
 
 
@@ -190,7 +191,7 @@ flex-direction: column;
 
 
 @media screen and (min-width:768px){
-   margin-top:115px;
+   margin-top:153px;
    margin-left:64px;
 }
 

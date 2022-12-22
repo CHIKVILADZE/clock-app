@@ -14,7 +14,7 @@ function Quote(){
   useEffect(()=>{
     let requestQuotes  = async () =>{
 
-        let response = await axios.get('https://api.quotable.io/random?minLength=100&maxLength=200')
+        let response = await axios.get('https://api.quotable.io/random?minLength=90&maxLength=100')
            let quotes =   response.data.content
            let authors = response.data.author 
                 
@@ -52,14 +52,13 @@ const QuoteStyle= styled.div`
   top:32px;
   position:absolute;
   left:26px;
- 
+
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-   display: flex;
-  align-items: flex-end;
+  
 color:#FFFF;
 
      
@@ -79,7 +78,7 @@ color:#FFFF;
     @media screen and (min-width:1000px){
       
       width:45%;
-      position:relative;
+      
        left:130px;
       
       top:56px;
@@ -87,9 +86,9 @@ color:#FFFF;
    
  @media screen and (min-width:1400px){
       
-      width:20%;
-     
-       left:200px;
+      width:40%;
+     top:100px;
+       left:150px;
       
       top:56px;
  }  
