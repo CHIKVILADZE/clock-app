@@ -4,12 +4,9 @@ import {useState, useEffect} from 'react';
 
 
 
-function Footer ({location , setLocation, hours}){
+function Footer ({location , setLocation, hours,  dayOfYear, dayOfWeek, weekNumber, setDayOfYear, setDayOfWeek, setWeekNumber}){
 
-    const[dayOfYear, setDayOfYear]=useState()
-    const[dayOfWeek, setDayOfWeek]=useState()
-    const[weekNumber, setWeekNumber]=useState()
-    
+  
   
 
     useEffect(()=>{

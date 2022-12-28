@@ -13,7 +13,8 @@ import moon from '../assets/desktop/moon.svg';
 
 
 
-function Day ({section, setSection,location,setLocation, more, setMore,handleClick, night, setNight}) {
+function Day ({section, setSection,location,setLocation, more, setMore,handleClick, night,
+     setNight, dayOfYear, dayOfWeek, weekNumber, setDayOfYear, setDayOfWeek, setWeekNumber}) {
     let today = new Date();
 
     let hours = addZero (today.getHours());
@@ -84,7 +85,10 @@ return(
                 <BtnStyle onClick={handleClick}><img  src={up}/></BtnStyle>
             </div>
           </TimeZoneStyle2> 
-          <Footer location={location} setLocation={setLocation} hours={hours}/>  
+          <Footer location={location} setLocation={setLocation} hours={hours} 
+          dayOfYear={dayOfYear} setDayOfYear={setDayOfYear}
+          dayOfWeek={dayOfWeek} setDayOfWeek={setDayOfWeek}
+          weekNumber={weekNumber} setWeekNumber={setWeekNumber}/>  
         </div>
     </DayTime>  
 

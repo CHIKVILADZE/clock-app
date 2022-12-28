@@ -27,6 +27,9 @@ function App() {
   const [location, setLocation] = useState(null)
   const[more, setMore]=useState(false)
   const [night, setNight] = useState(false)
+  const[dayOfYear, setDayOfYear]=useState()
+  const[dayOfWeek, setDayOfWeek]=useState()
+  const[weekNumber, setWeekNumber]=useState()
 
   const handleClick = () =>{
     setMore(!more)
@@ -39,10 +42,14 @@ function App() {
       <Day section={section} setSection={setSection} 
       location={location} setLocation={setLocation}
       more={more} setMore={setMore}
-      handleClick={handleClick} night={night} setNight={setNight} />
+      handleClick={handleClick} night={night} setNight={setNight}
+      dayOfYear={dayOfYear} setDayOfYear={setDayOfYear}
+      dayOfWeek={dayOfWeek} setDayOfWeek={setDayOfWeek}
+      weekNumber={weekNumber} setWeekNumber={setWeekNumber}
+       />
       
     </div>
-  );
+  ); 
 }
 
 export default App;
