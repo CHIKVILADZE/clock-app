@@ -12,7 +12,7 @@ function Footer ({location , setLocation, hours,  dayOfYear, dayOfWeek, weekNumb
     useEffect(()=>{
         let requestLocation  = async () =>{
 
-            let response = await axios.get('http://worldtimeapi.org/api/timezone/Asia/Tbilisi/')
+            let response = await axios.get('https://worldtimeapi.org/api/timezone/Asia/Tbilisi/')
                let timezone =   response.data.timezone
                let dayYear = response.data.day_of_year
                let dayWeek = response.data.day_of_week
